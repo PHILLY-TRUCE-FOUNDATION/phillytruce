@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1097246931375",
+    "project_id": "philly-truce-fb-test",
+    "storage_bucket": "philly-truce-fb-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097246931375:android:d8961eb296f3a6a346575a",
+        "android_client_info": {
+          "package_name": "com.AGAMI.PhillyTruceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097246931375-kel14571d9rfcb05jr6nq06cfe1luvpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOmCbWZ54QykvH6LrhQygEAxYGvAXqobk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097246931375-kel14571d9rfcb05jr6nq06cfe1luvpn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097246931375-hs9j1nf0cami6eqpdlrkejq0keh9cji0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.phillytruce"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097246931375:android:6837c2b1fc8149f546575a",
+        "android_client_info": {
+          "package_name": "com.app.philly_truce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097246931375-kel14571d9rfcb05jr6nq06cfe1luvpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOmCbWZ54QykvH6LrhQygEAxYGvAXqobk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097246931375-kel14571d9rfcb05jr6nq06cfe1luvpn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097246931375-hs9j1nf0cami6eqpdlrkejq0keh9cji0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.phillytruce"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

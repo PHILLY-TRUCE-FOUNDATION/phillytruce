@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1097246931375-hs9j1nf0cami6eqpdlrkejq0keh9cji0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1097246931375-hs9j1nf0cami6eqpdlrkejq0keh9cji0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCpSP193KvPjDkQtPmQfTXneJBzEkOy3kk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1097246931375</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.phillytruce</string>
+	<key>PROJECT_ID</key>
+	<string>philly-truce-fb-test</string>
+	<key>STORAGE_BUCKET</key>
+	<string>philly-truce-fb-test.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1097246931375:ios:eb882aac3799424d46575a</string>
+</dict>
+</plist>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/agora_rtc_engine-3.2.1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.17.4/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/background_location-0.3.1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/callkeep-0.2.3+1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.14.4/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/connectivity-2.0.2/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/firebase_analytics-6.3.0/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.18.4+1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.5.3/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/firebase_database-4.4.0/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-7.0.3/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/firebase_storage-5.2.0/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/flutter_ios_voip_kit-0.0.5/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-3.0.3/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.6/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/geocoder-0.2.1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/geolocator-5.3.2+2/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/google_api_availability-2.0.4/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-1.1.1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.7+21/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/location_permissions-3.0.0+1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.27/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/permission_handler-5.0.1+1/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/android" />
+            <option value="$USER_HOME$/Downloads/Fluttersdk/flutter-1.22.5/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.7.10/android" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

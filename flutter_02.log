@@ -1,0 +1,134 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color build ios --simulator
+
+## exception
+
+ProcessException: ProcessException: Process exited abnormally:
+xcodebuild: error: Scheme Runner is not currently configured for the build action.
+  Command: xcrun xcodebuild -configuration Debug -quiet -workspace Runner.xcworkspace -scheme Runner BUILD_DIR=/Users/imac/Desktop/nirav/Truce app/Truce App Git/build/ios -sdk iphonesimulator -arch x86_64 FLUTTER_SUPPRESS_ANALYTICS=true COMPILER_INDEX_STORE_ENABLE=NO -showBuildSettings
+
+```
+#0      RunResult.throwException (package:flutter_tools/src/base/process.dart:172:5)
+#1      _DefaultProcessUtils.run (package:flutter_tools/src/base/process.dart:392:21)
+<asynchronous suspension>
+#2      buildXcodeProject (package:flutter_tools/src/ios/mac.dart:362:66)
+#3      _rootRunUnary (dart:async/zone.dart:1198:47)
+#4      _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#5      _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#6      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#7      Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#8      Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#9      _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:40:15)
+#10     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:311:13)
+#11     _runBuildWithRetries (package:flutter_tools/src/ios/mac.dart)
+#12     _rootRunUnary (dart:async/zone.dart:1198:47)
+#13     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#14     _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#15     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#16     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#17     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#18     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:40:15)
+#19     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:311:13)
+#20     _DefaultProcessUtils.run (package:flutter_tools/src/base/process.dart)
+#21     _rootRunUnary (dart:async/zone.dart:1198:47)
+#22     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#23     _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#24     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#25     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#26     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#27     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:40:15)
+#28     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:311:13)
+#29     _run (package:flutter_tools/src/base/error_handling_io.dart)
+#30     _rootRunUnary (dart:async/zone.dart:1198:47)
+#31     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#32     _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#33     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#34     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#35     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#36     Future.wait.<anonymous closure> (dart:async/future.dart:414:23)
+#37     _rootRunUnary (dart:async/zone.dart:1198:47)
+#38     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#39     _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#40     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#41     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#42     Future._complete (dart:async/future_impl.dart:519:7)
+#43     Stream.fold.<anonymous closure> (dart:async/stream.dart:847:14)
+#44     _rootRun (dart:async/zone.dart:1182:47)
+#45     _CustomZone.run (dart:async/zone.dart:1093:19)
+#46     _CustomZone.runGuarded (dart:async/zone.dart:997:7)
+#47     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:410:13)
+#48     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:420:15)
+#49     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:305:7)
+#50     _SinkTransformerStreamSubscription._close (dart:async/stream_transformers.dart:97:11)
+#51     _EventSinkWrapper.close (dart:async/stream_transformers.dart:23:11)
+#52     _StringAdapterSink.close (dart:convert/string_conversion.dart:251:11)
+#53     _Utf8ConversionSink.close (dart:convert/string_conversion.dart:305:20)
+#54     _ConverterStreamEventSink.close (dart:convert/chunked_conversion.dart:82:18)
+#55     _SinkTransformerStreamSubscription._handleDone (dart:async/stream_transformers.dart:142:24)
+#56     _rootRun (dart:async/zone.dart:1182:47)
+#57     _CustomZone.run (dart:async/zone.dart:1093:19)
+#58     _CustomZone.runGuarded (dart:async/zone.dart:997:7)
+#59     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:410:13)
+#60     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:420:15)
+#61     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:305:7)
+#62     _SyncStreamControllerDispatch._sendDone (dart:async/stream_controller.dart:816:19)
+#63     _StreamController._closeUnchecked (dart:async/stream_controller.dart:671:7)
+#64     _StreamController.close (dart:async/stream_controller.dart:664:5)
+#65     _Socket._onData (dart:io-patch/socket_patch.dart:2051:21)
+#66     _rootRunUnary (dart:async/zone.dart:1206:13)
+#67     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#68     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1005:7)
+#69     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:357:11)
+#70     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:285:7)
+#71     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:808:19)
+#72     _StreamController._add (dart:async/stream_controller.dart:682:7)
+#73     _StreamController.add (dart:async/stream_controller.dart:624:5)
+#74     new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:1587:35)
+#75     _NativeSocket.issueReadEvent.issue (dart:io-patch/socket_patch.dart:1069:18)
+#76     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#77     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#78     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#79     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 1.22.5, on Mac OS X 10.15.5 19F101 darwin-x64, locale en-GB)
+    • Flutter version 1.22.5 at /Users/imac/flutter
+    • Framework revision 7891006299 (3 months ago), 2020-12-10 11:54:40 -0800
+    • Engine revision ae90085a84
+    • Dart version 2.10.4
+
+[!] Android toolchain - develop for Android devices (Android SDK version 30.0.1)
+    • Android SDK at /Users/imac/Library/Android/sdk
+    • Platform android-30, build-tools 30.0.1
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[✓] Xcode - develop for iOS and macOS (Xcode 11.6)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 11.6, Build version 11E708
+    • CocoaPods version 1.9.3
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin installed
+    • Dart plugin version 193.7547
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+
+[✓] VS Code (version 1.52.1)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension version 3.18.1
+
+[✓] Connected device (1 available)
+    • SM J701F (mobile) • 5200ab15f420c419 • android-arm • Android 9 (API 28)
+    ! Error: Weapplinse’s iPhone 6 plus is not connected. Xcode will continue when Weapplinse’s iPhone 6 plus is connected. (code -13)
+
+! Doctor found issues in 1 category.
+```

@@ -1,0 +1,121 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color build ios --simulator
+
+## exception
+
+ProcessException: ProcessException: Process exited abnormally:
+2021-03-04 11:47:19.964 xcodebuild[18941:119462] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7f7f4c9b3250), Weapplinse’s iPhone 6 plus, iPhone, 12.5.1 (16H22), 21091b1c4eeeaae2863b4783ff18815fcd1d741f> == Underlying device preparation errors ==
+2021-03-04 11:47:19.965 xcodebuild[18941:119462] [MT] iPhoneConnect: Failed _shouldMakeReadyForDevelopment check even though device is not locked by passcode.
+Domain: com.apple.platform.iphoneos
+Code: 5
+Failure Reason: allowsSecureServices: 1. isConnected: 0. Platform: <DVTPlatform:0x7f7f49c208b0:'com.apple.platform.iphoneos':<DVTFilePath:0x7f7f49c20830:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>. DTDKDeviceIdentifierIsIDID: 0
+User Info: {
+    DVTDeviceDescription = "\Ud83d\Udcf1<DVTiOSDevice (0x7f7f4c9b3250), Weapplinse\U2019s iPhone 6 plus, iPhone, 12.4.9 (16H5), 21091b1c4eeeaae2863b4783ff18815fcd1d741f>";
+}
+--
+2021-03-04 11:47:19.965 xcodebuild[18941:119462] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7f7f4c9b3250), Weapplinse’s iPhone 6 plus, iPhone, 12.5.1 (16H22), 21091b1c4eeeaae2863b4783ff18815fcd1d741f> == END: Underlying device preparation errors ==
+2021-03-04 11:47:20.062 xcodebuild[18941:119462] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7f7f4c9b3250), Weapplinse’s iPhone 6 plus, iPhone, 12.5.1 (16H22), 21091b1c4eeeaae2863b4783ff18815fcd1d741f> == Underlying device preparation errors ==
+2021-03-04 11:47:20.062 xcodebuild[18941:119462] [MT] iPhoneConnect: Failed _shouldMakeReadyForDevelopment check even though device is not locked by passcode.
+Domain: com.apple.platform.iphoneos
+Code: 5
+Failure Reason: allowsSecureServices: 1. isConnected: 0. Platform: <DVTPlatform:0x7f7f49c208b0:'com.apple.platform.iphoneos':<DVTFilePath:0x7f7f49c20830:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>. DTDKDeviceIdentifierIsIDID: 0
+User Info: {
+    DVTDeviceDescription = "\Ud83d\Udcf1<DVTiOSDevice (0x7f7f4c9b3250), Weapplinse\U2019s iPhone 6 plus, iPhone, 12.4.9 (16H5), 21091b1c4eeeaae2863b4783ff18815fcd1d741f>";
+}
+--
+2021-03-04 11:47:20.062 xcodebuild[18941:119462] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7f7f4c9b3250), Weapplinse’s iPhone 6 plus, iPhone, 12.5.1 (16H22), 21091b1c4eeeaae2863b4783ff18815fcd1d741f> == END: Underlying device preparation errors ==
+xcodebuild: error: Scheme Runner is not currently configured for the build action.
+  Command: xcrun xcodebuild -configuration Debug -quiet -workspace Runner.xcworkspace -scheme Runner BUILD_DIR=/Users/imac/Desktop/nirav/Truce app/Truce App Git/build/ios -sdk iphonesimulator -arch x86_64 FLUTTER_SUPPRESS_ANALYTICS=true COMPILER_INDEX_STORE_ENABLE=NO -showBuildSettings
+
+```
+#0      RunResult.throwException (package:flutter_tools/src/base/process.dart:171:5)
+#1      _DefaultProcessUtils.run (package:flutter_tools/src/base/process.dart:387:21)
+<asynchronous suspension>
+#2      buildXcodeProject (package:flutter_tools/src/ios/mac.dart:371:47)
+<asynchronous suspension>
+#3      _BuildIOSSubCommand.runCommand (package:flutter_tools/src/commands/build_ios.dart:244:37)
+<asynchronous suspension>
+#4      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1157:12)
+<asynchronous suspension>
+#5      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1009:27)
+<asynchronous suspension>
+#6      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#7      AppContext.run (package:flutter_tools/src/base/context.dart:149:12)
+<asynchronous suspension>
+#8      CommandRunner.runCommand (package:args/command_runner.dart:197:13)
+<asynchronous suspension>
+#9      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:278:9)
+<asynchronous suspension>
+#10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#11     AppContext.run (package:flutter_tools/src/base/context.dart:149:12)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:234:5)
+<asynchronous suspension>
+#13     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:64:9)
+<asynchronous suspension>
+#14     run.<anonymous closure> (package:flutter_tools/runner.dart:62:12)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#16     AppContext.run (package:flutter_tools/src/base/context.dart:149:12)
+<asynchronous suspension>
+#17     runInContext (package:flutter_tools/src/context_runner.dart:73:10)
+<asynchronous suspension>
+#18     main (package:flutter_tools/executable.dart:90:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.0.0, on Mac OS X 10.15.5 19F101 darwin-x64, locale en-GB)
+    • Flutter version 2.0.0 at /Users/imac/flutter
+    • Framework revision 60bd88df91 (13 hours ago), 2021-03-03 09:13:17 -0800
+    • Engine revision 40441def69
+    • Dart version 2.12.0
+
+[!] Android toolchain - develop for Android devices (Android SDK version 30.0.2)
+    • Android SDK at /Users/imac/Library/Android/sdk
+    • Platform android-30, build-tools 30.0.2
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[!] Xcode - develop for iOS and macOS
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 11.6, Build version 11E708
+    ! Xcode 11.6.0 out of date (12.0.1 is recommended).
+      Download the latest version or update via the Mac App Store.
+    ! CocoaPods 1.9.3 out of date (1.10.0 is recommended).
+        CocoaPods is used to retrieve the iOS and macOS platform side's plugin code that responds to your plugin usage on the Dart side.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/platform-plugins
+      To upgrade see https://guides.cocoapods.org/using/getting-started.html#installation for instructions.
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin version 51.0.1
+    • Dart plugin version 193.7547
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+
+[✓] VS Code (version 1.52.1)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension version 3.18.1
+
+[✓] Connected device (3 available)
+    • SM J701F (mobile)                   • 5200ab15f420c419                         • android-arm    • Android 9 (API 28)
+    • Weapplinse’s iPhone 6 plus (mobile) • 21091b1c4eeeaae2863b4783ff18815fcd1d741f • ios            • iOS 12.5.1
+    • Chrome (web)                        • chrome                                   • web-javascript • Google Chrome 88.0.4324.192
+    ! Error: Weapplinse’s iPhone 6 plus is busy: Copying cache files from device. Xcode will continue when Weapplinse’s iPhone 6 plus is finished. (code -10)
+
+! Doctor found issues in 2 categories.
+```
